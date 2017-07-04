@@ -1,0 +1,88 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.22.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Nelson Rodriguez, Coltrack, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.22
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.22
+Dialog DLL:      DARMCM1.DLL V1.15.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TARMCM1.DLL V1.11.0.0
+ 
+<h2>Project:</h2>
+C:\Users\Nelson Rodriguez\Documents\NRF\backup\examples\ble_peripheral\ble_app_uart\pca10028\s130\arm5_no_packs\ble_app_uart_s130_pca10028.uvprojx
+Project File Date:  06/29/2017
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'nrf51422_xxac_s130'
+compiling main.c...
+..\..\..\main.c(176): warning:  #550-D: variable "err_code"  was set but never used
+  		uint32_t                err_code;
+..\..\..\main.c(623): warning:  #550-D: variable "err_code"  was set but never used
+      uint32_t      err_code;
+..\..\..\main.c(625): warning:  #177-D: variable "flags"  was declared but never referenced
+      uint8_t       flags = BLE_GAP_ADV_FLAG_BR_EDR_NOT_SUPPORTED;
+..\..\..\main.c(827): warning:  #177-D: variable "erase_bonds"  was declared but never referenced
+      bool erase_bonds;
+..\..\..\main.c(885): warning:  #1-D: last line of file ends without a newline
+   */
+..\..\..\main.c(119): warning:  #177-D: variable "m_beacon_info"  was declared but never referenced
+  static uint8_t m_beacon_info[APP_BEACON_INFO_LENGTH] =                    /**< Information advertised by the Beacon. */
+..\..\..\main.c(207): warning:  #177-D: function "services_init"  was declared but never referenced
+  static void services_init(void)
+..\..\..\main.c(256): warning:  #177-D: function "conn_params_init"  was declared but never referenced
+  static void conn_params_init(void)
+..\..\..\main.c(537): warning:  #177-D: function "advertising_init"  was declared but never referenced
+  static void advertising_init(void)
+..\..\..\main.c(568): warning:  #177-D: function "buttons_leds_init"  was declared but never referenced
+  static void buttons_leds_init(bool * p_erase_bonds)
+..\..\..\main.c: 10 warnings, 0 errors
+linking...
+Program Size: Code=9552 RO-data=368 RW-data=196 ZI-data=3820  
+FromELF: creating hex file...
+".\_build\nrf51422_xxac_s130.axf" - 0 Error(s), 10 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+Package Vendor: NordicSemiconductor
+                http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_DeviceFamilyPack/NordicSemiconductor.nRF_DeviceFamilyPack.8.2.0.pack
+                NordicSemiconductor::Device:Startup:8.2.0
+                Nordic Semiconductor nRF ARM devices Device Family Pack.
+   * Component: Startup Version: 8.2.0
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\Nelson Rodriguez\Documents\NRF\backup\examples\ble_peripheral\ble_app_uart\pca10028\s130\arm5_no_packs\RTE\_nrf51422_xxac_s130
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include
+  C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.7.1\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+
+   * Component: NordicSemiconductor::Device:Startup:8.2.0
+      Include file:  Device\Include\system_nrf51.h
+      Source file:   Device\Source\system_nrf51.c
+      Source file:   Device\Source\arm\arm_startup_nrf51.s
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
